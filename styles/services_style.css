@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+article{
+	background-color: #C2C6D0;
+	text-align: center;
+	padding: 3vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+
+article h3{
+	font-family: 'PT Sans Caption', sans-serif;
+	color: #3F5487;
+	font-size: 3em;
+	margin: 0;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+article h2{
+	font-family: 'Play', sans-serif;
+	font-size: 1.7em;
+	padding-top: 3vh;
+}
+
+article h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: black;
+	font-size: 1.1em;
+	line-height: 1.9em;
+	flex-basis: 0;
+	flex-grow: 3;
+}
+
+
+.block_area{
+	columns: 30vw auto;
+}
+
+figure{
+	background-color: #94969C;
+	margin: 0;
+	margin-bottom: 5vh;
+}
+
+figure img{
+	max-width: 20vw;
+	max-height: 20vh;
+}
+
+figcaption{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.1em;
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	background-image: url("../images/canvas.png");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.preloader{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	background-color: rgba(35, 50, 79, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.preloader img{
+	animation: rotation_pre 3s infinite ease;
+	width: 15vw;
+	height: 15vw;
+}
+
+.loaded_hiding .preloader {
+  transition: 1s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+header{
+	width: 100%;
+	text-transform: uppercase;
+	background-color: #C2C6D0;
+	padding-top: 3vw;
+	padding-bottom: 0.1vw;
+}
+
+header ul{
+	list-style-type: none;
+	background-color:#6D7179;
+	padding-left: 3vw;
+}
+
+header li{
+	display: inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	background-color: #6D7179;
+}
+
+header li:hover{
+	background-color: #8D93A1;
+	transition: all 0.5s;
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+}
+
+header > h1{
+	font-family: 'Russo One', sans-serif;
+	font-size: 4em;
+	padding-left: 3vw;
+	padding-bottom: 1vw;
+	margin: 0;
+}
+
+footer{
+	background-color: #94969C;
+	width: 100%;
+	padding-top: 2vw;
+	padding-bottom: 1vw;
+	text-align: center;
+}
+
+footer h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: black;
+	font-size: 1.1em;
+}
+
+footer i{
+	color: black;
+	font-size: 2em;
+	padding-right: 1vw;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+.vb, .tg{
+	color: black;
+	transition: all 0.5s;
+}
+
+.vb:hover, .tg:hover{
+	transform: scale(1.2);
+	color: rgba(var(--color), 1);
+	text-shadow: 5px 5px 2px rgba(109, 113, 121, 0.5);
+}
+
+.vb{--color: 102, 92, 172;}
+.tg{--color: 0, 136, 204;}
+
+@keyframes rotation_pre{
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(180deg);}
+	100%{transform: rotateY(360deg);}
+}

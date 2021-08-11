@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<link rel = "stylesheet" href = "styles/style.css">
+		<link rel = "stylesheet" href = "styles/index_style.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class = "preloader">
+		  <img src = "images/preloader_img.png">
+		</div>
+		<script>
+		  window.onload = function () {
+			window.scrollTo(0, 0);
+			document.body.classList.add('loaded_hiding');
+			window.setTimeout(function () {
+			  document.body.classList.add('loaded');
+			  document.body.classList.remove('loaded_hiding');
+			}, 1000);
+		  }
+		</script>
+		<div class = "wrapper">
+			<header>
+				<h1> сто сталкер </h1>
+				<ul>
+					<a href = "index.html"><li> Главная </li></a>
+					<a href = "services.html"><li> Услуги </li></a>
+					<a href = "contacts.html"><li> Контакты </li></a>
+				</ul>
+			</header>
+			
+			<div class = "blur_element">
+				<a href = "#scslide"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+				<span>Автомастерская "Сталкер" - к Вашим услугам!</span>
+				<h2> Быстрое, проффесиональное и надёжное обслуживание автомобилей </h2>
+			</div>
+		</div>
+		<article id = "scslide">
+			<div class = "inner">
+				<div class = "txt_frame">
+					<h3> О нас </h3>
+					<h4 style = "font-weight: 600; font-size: 1.2em"> Мы предоставляем полное обслуживание топливных систем бензиновых автомобилей: </h4>
+					<h4><ul>  
+						<li> проводим компьютерную диагностику </li>
+						<li> выполняем демонтаж и монтаж топливных модулей с последующей их диагностикой </li>
+						<li> выполняем ремонт электробензонасосов с гарантией 12 месяцев </li>
+						<li> предоставляем подбор новых топливных элементов (топливных фильтров, топливных насосов и заборных сеток) </li>
+						<li> выполняем чистку инжекторов, дроссельных заслонок и клапанов холостого хода </li>
+						<li> чистка топливных баков (при необходимости их замену) </li>
+						<li> выполняем другие сопутствующие работы связанные с топливной системой </li>
+						<li> Обеспечиваем оперативный подбор и доставку качественных запчастей. </li>
+					</ul>
+					Опыт работы позволяет нашим сотрудникам быстро и правильно проводить дефектовку и устранять неисправности.​ </h4>
+				</div>
+				<div class = "frame"> </div>
+			</div>
+		</article>
+		
+		<footer>
+			<a href = "viber://chat?number=%2B380505726007"> <i class="fab fa-viber vb"></i> </a>
+			<a href = "https://t.me/andrey_stulker"> <i class="fab fa-telegram-plane tg"></i> </a>
+			<h4> © Михайличенко Н. А., 2021 &nbsp&nbsp&nbsp Gmail: andrey.stulker@gmail.com</h4>
+			<h4> +38(050)5726007, +38(067)6305604 </h4>
+		</footer>
+	</body>
+</html>
