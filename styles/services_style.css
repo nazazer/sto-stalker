@@ -45,19 +45,6 @@ h4{
 	flex-wrap: wrap;
 }
 
-figure{
-	background-color: #3F5487;
-	margin: 0;
-	margin-bottom: 5vh;
-	padding: 5px;
-	border-radius: 3px;
-}
-
-figcaption{
-	font-family: 'Roboto Slab', serif;
-	font-size: 1.1em;
-}
-
 .srupbl{
 	background-image: url("../images/services_img.png");
 	background-position: center 80%;
@@ -186,4 +173,26 @@ a:hover .box::before{
 
 .description_area > h3{
 	text-align: center;
+}
+
+#arrow{
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	z-index: 9;
+	bottom: 50px;
+	right: 30px;
+	transition: all 1s;
+}
+
+.hidden{
+	transform: translateY(150%);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.show{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
 }
