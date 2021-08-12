@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 
 article{
 	background-color: #C2C6D0;
@@ -11,7 +14,7 @@ article{
 	padding-right: 3vw;
 }
 
-article h3{
+h3{
 	font-family: 'PT Sans Caption', sans-serif;
 	color: #3F5487;
 	font-size: 3em;
@@ -20,39 +23,167 @@ article h3{
 	padding-bottom: 3vh;
 }
 
-article h2{
+h2{
 	font-family: 'Play', sans-serif;
 	font-size: 1.7em;
 	padding-top: 3vh;
 }
 
-article h4{
+h4{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: black;
 	font-size: 1.1em;
 	line-height: 1.9em;
-	flex-basis: 0;
-	flex-grow: 3;
 }
 
 
 .block_area{
-	columns: 30vw auto;
+	--columns: 25vw auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 figure{
-	background-color: #94969C;
+	background-color: #3F5487;
 	margin: 0;
 	margin-bottom: 5vh;
-}
-
-figure img{
-	max-width: 20vw;
-	max-height: 20vh;
+	padding: 5px;
+	border-radius: 3px;
 }
 
 figcaption{
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.1em;
+}
+
+.srupbl{
+	background-image: url("../images/services_img.png");
+	background-position: center 80%;
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+}
+
+.box{
+	text-align: center;
+	width: 20vw;
+	font-family: 'Vollkorn', serif;
+	font-size: 1.5em;
+	padding: 3vw;
+	transition: all 0.5s;
+}
+
+.box h4{
+	margin-top: 1vh;
+	line-height: 1.3em;
+}
+
+.img_frame{
+	background-position: center;
+	background-size: cover;
+	width: 20vw;
+	height: 20vw;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+
+.one{
+	background-image: url("../images/pump.png");
+}
+
+.two{
+	background-image: url("../images/injectors.png");
+}
+
+.three{
+	background-image: url("../images/fuel.png");
+}
+
+.four{
+	background-image: url("../images/filter.png");
+}
+
+.five{
+	background-image: url("../images/eng.jpg");
+}
+
+.six{
+	background-image: url("../images/pcd.png");
+}
+
+.img_frame::before{
+	position: relative;
+	content: "";
+	background-color: #3F5487;
+	width: 100%;
+	height: 100%;
+	top: -10%;
+	left: -13%;
+	z-index: -1;
+	display: inline-block;
+}
+
+.img_frame::after{
+	position: relative;
+	content: "";
+	background-color: rgba(194, 198, 208, 0);
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	z-index: 5;
+	display: block;
+	transition: all 0.5s;
+}
+
+a:hover .img_frame::after{
+	background-color: rgba(194, 198, 208, 0.7);
+}
+
+a:hover .box h4{
+	color: rgba(0, 0, 0, 0.5);
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	z-index: 3;
+}
+
+.box::before{
+	content: "Подробнее";
+	font-size: 1.3em;
+	color: #3F5487;
+	position: relative;
+	top: 0;
+	font-family: 'Russo One', sans-serif;
+	z-index: 7;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+a:hover .box::before{
+	top: 11vw;
+	opacity: 1;
+}
+
+.description_area{
+	background-color: #DFE1E8;
+	padding: 3vw;
+	padding-left: 20vw;
+	padding-right: 20vw;
+	margin: 0;
+}
+
+.description_area > h4{
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+.description_area > h3{
+	text-align: center;
 }
