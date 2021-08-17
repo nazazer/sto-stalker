@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<link rel = "stylesheet" href = "styles/style.css">
+		<link rel = "stylesheet" href = "styles/route.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class = "preloader">
+		  <img src = "images/preloader_img.png">
+		</div>
+		<script>
+		  window.onload = function () {
+			document.body.classList.add('loaded_hiding');
+			window.setTimeout(function () {
+			  document.body.classList.add('loaded');
+			  document.body.classList.remove('loaded_hiding');
+			}, 1000);
+		  }
+		</script>
+		<header>
+			<h1> сто сталкер </h1>
+			<ul>
+				<a href = "index.html"><li> Главная </li></a>
+				<a href = "services.html"><li> Услуги </li></a>
+				<a href = "contacts.html"><li> Контакты </li></a>
+				<a href = "route.html"><li> Как проехать </li></a>
+			</ul>
+		</header>
+		
+		<article>
+			
+		</article>
+		
+		<footer>
+			<a href = "viber://chat?number=%2B380505726007"> <i class='fab fa-viber vb'></i> </a>
+			<a href = "https://t.me/andrey_stulker"> <i class="fab fa-telegram-plane tg"></i> </a>
+			<h4> © Михайличенко Н. А., 2021 &nbsp&nbsp&nbsp Gmail: andrey.stulker@gmail.com</h4>
+			<h4> +38(050)5726007, +38(067)6305604 </h4>
+		</footer>
+		
+		<script>
+		jQuery(document).ready(function() {
+		  var btn = $('#arrow');  
+		  btn.addClass('hidden');
+		  $(window).scroll(function() {     
+			if ($(window).scrollTop() > 700) {
+			   btn.removeClass('hidden').addClass('show');
+			 } else {
+			   btn.removeClass('show').addClass('hidden');
+			 }
+		   });
+		});
+		</script>
+	</body>
+</html>
