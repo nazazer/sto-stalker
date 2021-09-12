@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+body{
+	margin-left: 0;
+	margin-right: 0;
+	--background-image: url("../images/bg1.jpg");
+	background-color: #C2C6D0;
+}
+
+header{
+	text-transform: uppercase;
+}
+
+header ul{
+	list-style-type: none;
+	background-color:#6D7179;
+	padding-left: 3vw;
+}
+
+header li{
+	display: inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	background-color: #6D7179;
+}
+
+header li:hover{
+	background-color: #8D93A1;
+	transition: all 0.5s;
+}
+
+header li > a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+}
+
+header > h1{
+	font-family: 'Russo One', sans-serif;
+	font-size: 4em;
+	margin: 3vw;
+}

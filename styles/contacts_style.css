@@ -106,8 +106,9 @@ article iframe{
 }
 
 .red_block i{
-	color: red;
+	color: #A64D4D;
 	font-size: 5em;
 	flex-basis: 0;
 	flex-grow: 2;
+	text-shadow: 3px 3px 4px black;
 }
