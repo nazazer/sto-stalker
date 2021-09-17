@@ -175,6 +175,21 @@ a:hover .box::before{
 	text-align: center;
 }
 
+.head1{
+	padding-top: 20vh; 
+	text-shadow: 2px 2px 5px #6D7179; 
+	background: rgba(194, 198, 208, 0.65);
+}
+
+.head2{
+	font-size: 1.3em; 
+	padding-top: 0; 
+	color: black; 
+	padding-bottom: 20vh; 
+	text-shadow: 2px 2px 5px #6D7179; 
+	background: rgba(194, 198, 208, 0.65);
+}
+
 #arrow{
 	width: 80px;
 	height: 80px;
@@ -195,4 +210,84 @@ a:hover .box::before{
 	transform: translateY(0);
 	opacity: 1;
 	visibility: visible;
+}
+
+article > h3{
+	font-size: 2em; 
+	font-weight: bold; 
+	display: none;
+}
+
+@media screen and (max-width: 900px), (max-device-width: 900px){
+	.head1{
+		font-size: 2.5em;
+	}
+	
+	.head2{
+		font-size: 1.1em;
+	}
+	
+	h3{
+		font-size: 1.7em;
+	}
+	
+	.description_area h3{
+		padding-bottom: 0.5vh;
+	}
+	
+	.description_area h4{
+		padding: 0;
+		font-size: 1em;
+		letter-spacing: 0.2px;
+		line-height: 27px;
+	}
+	
+	.description_area{
+		padding-left: 0.5vw;
+		padding-right: 0.5vw;
+	}
+	
+	.img_frame{
+		width: 40vw;
+		height: 40vw;
+	}
+	
+	article .box h4{
+		font-size: 0.9em;
+	}
+	
+	.box{
+		width: 40vw;
+		padding: 3vh;
+	}
+	
+	a:hover .box::before{
+		top: 22vw;
+	}
+	
+	article > h3{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1200px), (max-device-width: 1200px){
+	.description_area{
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+}
+
+@media screen and (max-width: 500px), (max-device-width: 500px){
+	.img_frame{
+		width: 60vw;
+		height: 60vw;
+	}
+	
+	.box{
+		width: 60vw;
+	}
+	
+	a:hover .box::before{
+		top: 33vw;
+	}
 }
