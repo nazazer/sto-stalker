@@ -73,3 +73,19 @@ article figcaption{
 	text-align: left;
 	max-width: 24vw;
 }
+
+@media screen and (max-width: 900px), (max-device-width: 900px){
+	article h3{
+		font-size: 3.1em;
+		padding: 3vh;
+	}
+	
+	article figure img{
+		width: 44vh;
+		height: 33vh;
+	}
+	
+	article figcaption{
+		max-width: 40vh;
+	}
+}
