@@ -112,3 +112,44 @@ article iframe{
 	flex-grow: 2;
 	text-shadow: 3px 3px 4px black;
 }
+
+.red_block h3{
+	color: black; 
+	font-size: 1.6em;
+}
+
+@media screen and (max-width: 900px), (max-device-width: 900px){
+	.content_col{
+		flex-direction: column;
+	}
+	
+	.img_r{
+		flex-basis: auto;
+		width: 100%;
+	}
+	
+	article h3{
+		font-size: 2.8em;
+		padding: 1vh;
+	}
+	
+	.content_col h4{
+		font-size: 1.7em;
+	}
+	
+	.red_block{
+		flex-direction: column;
+	}
+	
+	.red_block h3{
+		font-size: 1.2em;
+	}
+	
+	.red_block i{
+		padding: 3vw;
+	}
+	
+	.content_col span{
+		padding-bottom: 3vh;
+	}
+}
