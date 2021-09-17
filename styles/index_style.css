@@ -56,6 +56,7 @@ article h4{
 .blur_element{
 	position: absolute;
 	bottom: 0;
+	--margin-top: 10vh;
 	width: 100%;
 	background: linear-gradient(rgba(194, 198, 208, 0), rgba(194, 198, 208, 1));
 	z-index: 1;
@@ -79,7 +80,7 @@ article h4{
 	color: black;
 	animation: 3s ease infinite updown;
 	padding: 5vh;
-	text-shadow: 0px 0px 7px black;
+	text-shadow: 0px 0px 7px #ffa700;
 }
 
 .blur_element h2{
@@ -99,4 +100,44 @@ article h4{
 	0% {top: 0;}
 	50% {top: 4vh;}
 	100% {top: 0;}
+}
+
+@media screen and (max-width: 900px), (max-device-width: 900px){
+	article .inner{
+		flex-direction: column;
+	}
+	
+	.frame{
+		flex-basis: auto;
+		height: 60vh;
+	}
+	
+	.blur_element span{
+		font-size: 1.7em;
+		text-align: center;
+		padding: 1vh;
+		padding-bottom: 0;
+	}
+	
+	.blur_element h2{
+		font-size: 1.1em;
+		text-align: center;
+		padding: 1vh;
+	}
+	
+	article .inner{
+		padding-bottom: 4vh;
+	}
+}
+
+@media screen and (max-width: 1200px), (max-device-width: 1200px){
+	article .inner{
+		padding-left: 0;
+	}
+	
+	article .txt_frame{
+		padding-left: 4vw;
+		padding-right: 4vw;
+		flex-grow: 3;
+	}
 }

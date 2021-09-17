@@ -125,3 +125,18 @@ footer a{
 	50%{transform: rotateY(180deg);}
 	100%{transform: rotateY(360deg);}
 }
+
+@media screen and (max-width: 900px), (max-device-width: 900px){
+	footer{
+		padding-top: 3vh;
+	}
+	
+	footer i{
+		font-size: 1.8em;
+		padding-right: 5vw;
+	}
+	
+	footer h4{
+		font-size: 1em;
+	}
+}
