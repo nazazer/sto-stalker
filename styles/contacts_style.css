@@ -78,7 +78,7 @@ article iframe{
 .content_col .img_r{
 	flex-basis: 0;
 	flex-grow: 5;
-	background-image: url("../images/contacts_pg.jpg");
+	background-image: url("../images/compressed/contacts_pg.jpg");
 	background-position: center;
 	background-size: cover;
 	min-height: 80vh;

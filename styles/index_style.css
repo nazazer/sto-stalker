@@ -39,7 +39,7 @@ article h4{
 .frame{
 	flex-basis: 0;
 	flex-grow: 3;
-	background-image: url("../images/up.png");
+	background-image: url("../images/compressed/up.png");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;

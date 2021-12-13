@@ -46,7 +46,7 @@ h4{
 }
 
 .srupbl{
-	background-image: url("../images/services_img.png");
+	background-image: url("../images/compressed/services_img.png");
 	background-position: center 80%;
 	background-size: cover;
 	width: 100%;
@@ -79,27 +79,27 @@ h4{
 }
 
 .one{
-	background-image: url("../images/pump.png");
+	background-image: url("../images/compressed/pump.png");
 }
 
 .two{
-	background-image: url("../images/injectors.png");
+	background-image: url("../images/compressed/injectors.png");
 }
 
 .three{
-	background-image: url("../images/fuel.png");
+	background-image: url("../images/compressed/fuel.png");
 }
 
 .four{
-	background-image: url("../images/filter.png");
+	background-image: url("../images/compressed/filter.png");
 }
 
 .five{
-	background-image: url("../images/eng.jpg");
+	background-image: url("../images/compressed/eng.jpg");
 }
 
 .six{
-	background-image: url("../images/pcd.png");
+	background-image: url("../images/compressed/pcd.png");
 }
 
 .img_frame::before{
