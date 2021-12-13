@@ -18,6 +18,26 @@
 			  document.body.classList.remove('loaded_hiding');
 			}, 1000);
 		  }
+		let currentphoto = 1;
+		function rmv(){
+			document.getElementById("modal").classList.remove("visible");
+		}
+		
+		function adw(num){
+			currentphoto = num;
+			document.getElementById("modal").classList.add("visible");
+			document.getElementById("wbt").src = "images/img_conseq/t/compresed/" + num + ".jpg";
+		}
+		
+		function nxt(){
+			(currentphoto === 12) ? currentphoto = 1 : currentphoto++;
+			document.getElementById("wbt").src = "images/img_conseq/t/compresed/" + currentphoto + ".jpg";
+		}
+		
+		function prev(){
+			(currentphoto === 1) ? currentphoto = 12 : currentphoto--;
+			document.getElementById("wbt").src = "images/img_conseq/t/compresed/" + currentphoto + ".jpg";
+		}
 		</script>
 		<header>
 			<h1> сто сталкер </h1>
@@ -34,63 +54,76 @@
 			
 			<h4><span>
 			
+			<div id = "modal" class = "invisible">
+				<div class = "modaldialog">
+					<div class = "modalcontent">
+						<div id = "clsbt" onClick="rmv();"><i class="fas fa-times"></i></div>
+						<div class = "contentmiddle">
+							<div class = "npbt" onClick = "prev();"><i class="fas fa-angle-left"></i></div>
+							<img src = "images/img_conseq/t/compresed/1.jpg" id = "wbt">
+							<div class = "npbt" onClick = "nxt();"><i class="fas fa-angle-right"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/1.jpg">
+				<img src = "images/img_conseq/t/compresed/1.jpg" onClick="adw(1);">
 				<figcaption> <span> шаг 1.</span> <div>  Поворачиваем с Запорожского шоссе на переулок Джинчарадзе. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/2.jpg">
+				<img src = "images/img_conseq/t/compresed/2.jpg" onClick="adw(2);">
 				<figcaption> <span> шаг 2.</span> <div>Двигаемся вдоль улицы. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/4.jpg">
+				<img src = "images/img_conseq/t/compresed/3.jpg" onClick="adw(3);">
 				<figcaption> <span> шаг 3.</span> <div>Через 200 метров отмечаем кафе "Смак". </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/5.jpg">
+				<img src = "images/img_conseq/t/compresed/4.jpg" onClick="adw(4);">
 				<figcaption> <span> шаг 4.</span> <div>За кафе повораичваем направо. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/6.jpg">
+				<img src = "images/img_conseq/t/compresed/5.jpg" onClick="adw(5);">
 				<figcaption> <span> шаг 5.</span> <div>Двигаемся вдоль бетонного забора. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/7.jpg">
+				<img src = "images/img_conseq/t/compresed/6.jpg" onClick="adw(6);">
 				<figcaption> <span> шаг 6.</span> <div>Продолжаем ехать прямо(НЕ сворачивать налево к гаражам!). </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/9.jpg">
+				<img src = "images/img_conseq/t/compresed/7.jpg" onClick="adw(7);">
 				<figcaption> <span> шаг 7.</span> <div>Как ориентир, слева будет ограждение с колючей проволокой. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/10.jpg">
+				<img src = "images/img_conseq/t/compresed/8.jpg" onClick="adw(8);">
 				<figcaption> <span> шаг 8.</span> <div>Дорога идёт левее и приводит Вас к серым воротам. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/11.jpg">
+				<img src = "images/img_conseq/t/compresed/9.jpg" onClick="adw(9);">
 				<figcaption> <span> шаг 9.</span> <div>Проехавши ворота поворачиваем направо. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/12.jpg">
+				<img src = "images/img_conseq/t/compresed/10.jpg" onClick="adw(10);">
 				<figcaption> <span> шаг 10.</span> <div>Едем вдоль дороги из бетонных блоков. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/13.jpg">
+				<img src = "images/img_conseq/t/compresed/11.jpg" onClick="adw(11);">
 				<figcaption> <span> шаг 11.</span> <div>Перед аркой серого здания поворачиваем направо и направляемся к крайнему правому гаражу. </div></figcaption>
 			</figure>
 			
 			<figure>
-				<img src = "images/img_conseq/t/compresed/14.jpg">
+				<img src = "images/img_conseq/t/compresed/12.jpg" onClick="adw(12);">
 				<figcaption> <span> шаг 12.</span> <div>Вы у цели! </div></figcaption>
 			</figure>
 			

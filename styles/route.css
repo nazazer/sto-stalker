@@ -62,6 +62,10 @@ article figure img{
 	height: 18vw;
 }
 
+article figure img:hover{
+	cursor: pointer;
+}
+
 article figure{
 	border: 8px solid #DCDFE8;
 	background-color: #DCDFE8;
@@ -72,6 +76,104 @@ article figcaption{
 	padding: 2%;
 	text-align: left;
 	max-width: 24vw;
+}
+
+#modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	transition: all 0.3s;
+	pointer-events: none;
+	z-index: 2000;
+}
+
+.invisible{
+	opacity: 0;
+	display: none;
+}
+
+.visible{
+	opacity: 1;
+	display: block;
+}
+
+#modal:focus{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modaldialog{
+	margin-top: 1%;
+	margin-bottom: 2%;
+	margin-left: 15%;
+	margin-right: 15%;
+	pointer-events: auto;
+	z-index: 2001;
+}
+
+.modalcontent{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-clip: padding-box;
+	align-items: center;
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 0.5%;
+}
+
+.modalcontent img{
+	border-radius: 10px;
+	width: 83%;
+	height: 83%;
+	object-fit: contain;
+	display: inline;
+}
+
+.modalcontent #clsbt{
+	border-radius: 10px;
+	color: #93969E;
+	transition: all 0.4s;
+	padding: 1%;
+	margin: 0.5%;
+	width: 97%;
+	font-size: 2.5em;
+	z-index: 2005;
+	pointer-events: auto;
+}
+
+.modalcontent .npbt{
+	border-radius: 10px;
+	color: #93969E;
+	transition: all 0.4s;
+	padding: 0.8%;
+	margin: 0.5%;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 2.5em;
+	z-index: 2005;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4vw;
+}
+
+.modalcontent #clsbt:hover, .npbt:hover{
+	cursor: pointer;
+	color: #6F7278;
+	background-color: rgba(171, 174, 184, 0.3);
+}
+
+.contentmiddle{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
 }
 
 @media screen and (max-width: 900px), (max-device-width: 900px){
