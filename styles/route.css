@@ -88,7 +88,7 @@ article figcaption{
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	transition: all 0.3s;
-	pointer-events: none;
+	pointer-events: auto;
 	z-index: 2000;
 }
 
@@ -99,19 +99,17 @@ article figcaption{
 
 .visible{
 	opacity: 1;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#modal:focus{
+/*#modal:focus{
 	opacity: 1;
 	pointer-events: auto;
-}
+}*/
 
 .modaldialog{
-	margin-top: 1%;
-	margin-bottom: 2%;
-	margin-left: 15%;
-	margin-right: 15%;
 	pointer-events: auto;
 	z-index: 2001;
 }
@@ -129,8 +127,8 @@ article figcaption{
 
 .modalcontent img{
 	border-radius: 10px;
-	width: 83%;
-	height: 83%;
+	width: 83vw;
+	height: 83vh;
 	object-fit: contain;
 	display: inline;
 }
@@ -189,5 +187,51 @@ article figcaption{
 	
 	article figcaption{
 		max-width: 40vh;
+	}
+}
+
+@media screen and (max-width: 1200px), (max-device-width: 1200px){
+	.modalcontent{
+		padding: 0;
+		border-radius: 0;
+		height: 100%;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.modaldialog{
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.visible{
+		opacity: 1;
+		display: block;
+	}
+
+	.contentmiddle{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.modalcontent img{
+		border-radius: 0;
+		width: 100vw;
+		height: auto;
+		object-fit: contain;
+		display: inline;
+	}
+
+	.modalcontent .npbt{
+		transform: rotate(90deg);
+	}
+
+	.modalcontent #clsbt{
+		position: absolute;
+		top: 0;
 	}
 }
