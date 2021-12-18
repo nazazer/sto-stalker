@@ -157,4 +157,8 @@ footer h4 a{
 		width: 15vh;
 		height: 15vh;
 	}
+	
+	header ul{
+		text-align: center;
+	}
 }
