@@ -1,5 +1,0 @@
-#ErrorDocument 404 http://sto-stalker.com/error/404.html
-
-RewriteEngine On
-RewriteCond %{HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L] 
