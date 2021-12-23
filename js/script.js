@@ -1,3 +1,11 @@
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 1000);
+  }
+
 function showM(){
     document.getElementById("addwin").classList.add("hider");
     document.getElementById("addwin").appendChild(document.getElementById("headlist"));

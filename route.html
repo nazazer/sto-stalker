@@ -3,26 +3,16 @@
 	<head>
 		<meta charset = "UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel = "stylesheet" href = "https://www.sto-stalker.com/styles/style.css">
-		<link rel = "stylesheet" href = "https://www.sto-stalker.com/styles/route.css">
+		<link rel = "stylesheet" href = "styles/style.css">
+		<link rel = "stylesheet" href = "styles/route.css">
 		<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 		<title> Маршрут - СТО Сталкер</title>
 	</head>
 	<body>
 		<div class = "preloader">
-		  <img src = "https://www.sto-stalker.com/images/preloader_img.png">
+		  <img src = "images/preloader_img.png">
 		</div>
 		<script>
-		  window.onload = function () {
-			document.body.classList.add('loaded_hiding');
-			window.setTimeout(function () {
-			  document.body.classList.add('loaded');
-			  document.body.classList.remove('loaded_hiding');
-			  for(i = 0; i < 12; i++){
-				document.getElementById(`where${i}`).src = "images/img_conseq/t/compressed/compresed/" + (i+1) + ".jpg";
-			  }
-			}, 1000);
-		  }
 		let currentphoto = 1;
 		function rmv(){
 			document.getElementById("modal").classList.remove("visible");
