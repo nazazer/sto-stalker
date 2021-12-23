@@ -43,6 +43,8 @@ article h4{
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+	transform: translateZ(0%);
+	will-change: top;
 }
 
 .txt_frame{
