@@ -13,6 +13,29 @@
 		  <img src = "images/preloader_img.png">
 		</div>
 		<script>
+		window.onload = function () {
+			document.body.classList.add('loaded_hiding');
+			window.setTimeout(function () {
+			  document.body.classList.add('loaded');
+			  document.body.classList.remove('loaded_hiding');
+			  for(i = 0; i < 12; i++){
+				document.getElementById(`where${i}`).src = "images/img_conseq/t/compressed/compresed/" + (i+1) + ".jpg";
+			  }
+			}, 1000);
+		}
+
+		function showM(){
+			document.getElementById("addwin").classList.add("hider");
+			document.getElementById("addwin").appendChild(document.getElementById("headlist"));
+			document.getElementById("headlist").classList.add("visible");
+		}
+
+		function closeM(){
+			document.getElementById("addwin").classList.remove('hider');
+			document.getElementById("headlist").classList.remove("visible");
+			document.getElementById("wrhead").appendChild(document.getElementById("headlist"));
+		}
+
 		let currentphoto = 1;
 		function rmv(){
 			document.getElementById("modal").classList.remove("visible");
@@ -34,7 +57,6 @@
 			document.getElementById("wbt").src = "images/img_conseq/t/compressed/" + currentphoto + ".jpg";
 		}
 		</script>
-		<script src = "js/script.js"></script>
 		<header id = "wrhead">
 			<div id = "addwin">
 				<div id = "openedmenu" onclick="closeM();">
