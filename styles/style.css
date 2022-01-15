@@ -47,6 +47,7 @@ header{
 	background-color: #C2C6D0;
 	padding-top: 3vw;
 	padding-bottom: 0.1vw;
+	z-index: 1000;
 }
 
 header ul{
@@ -186,6 +187,11 @@ footer h4 a{
 	margin-bottom: 5px;
 	height: 3px;
 	background-color: white;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
 }
 
 @keyframes menu_appear{

@@ -17,3 +17,16 @@ function closeM(){
     document.getElementById("headlist").classList.remove("visible");
     document.getElementById("wrhead").appendChild(document.getElementById("headlist"));
 }
+
+window.onscroll = function(){checkMenu()};
+
+let header = document.getElementById("headlist");
+let sticky = header.offsetTop;
+
+function checkMenu(){
+  if(window.pageYOffset > sticky){
+    header.classList.add("sticky");
+  }else{
+    header.classList.remove("sticky");
+  }
+}
