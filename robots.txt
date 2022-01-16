@@ -1,1 +1,1 @@
-Sitemap: https://www.sto-stalker.com/scheme/sitemap.xml
+Sitemap: https://www.sto-stalker.com/sitemap.xml
