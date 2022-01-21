@@ -8,6 +8,7 @@
 		<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 		<title> Маршрут к СТО Сталкер | Ремонт топливной системы автомобиля Днепр </title>
 		<meta name = "description" content = "Мы находимся В Днепре по адресу: Запорожское шосе 32Б. На этой странице находится подробная инструкция как проехать к нашему СТО.">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<!--analytics-->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQ58GELXJ5"></script>
 		<script>
@@ -24,6 +25,7 @@
 		</div>
 		<script>
 		window.onload = function () {
+			console.log("meowww");
 			document.body.classList.add('loaded_hiding');
 			window.setTimeout(function () {
 			  document.body.classList.add('loaded');
@@ -32,18 +34,6 @@
 				document.getElementById(`where${i}`).src = "images/img_conseq/t/compressed/compresed/" + (i+1) + ".jpg";
 			  }
 			}, 1000);
-		}
-
-		function showM(){
-			document.getElementById("addwin").classList.add("hider");
-			document.getElementById("addwin").appendChild(document.getElementById("headlist"));
-			document.getElementById("headlist").classList.add("visible");
-		}
-
-		function closeM(){
-			document.getElementById("addwin").classList.remove('hider');
-			document.getElementById("headlist").classList.remove("visible");
-			document.getElementById("wrhead").appendChild(document.getElementById("headlist"));
 		}
 
 		let currentphoto = 1;
@@ -172,6 +162,8 @@
 			</span></h4>
 			
 		</article>
+
+		<a href = "#wrhead"><img src = "images/arrow.svg" id = "arrow"></a>
 		
 		<footer>
 			<a href = "viber://chat?number=%2B380505726007"> <i class='fab fa-viber vb'></i> </a>
@@ -194,6 +186,6 @@
 		});
 		</script>
 
-		<script src = "js/script.js"></script>
+		<script src = "js/route.js"></script>
 	</body>
 </html>
