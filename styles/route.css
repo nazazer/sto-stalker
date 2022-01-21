@@ -69,6 +69,7 @@ article figure img:hover{
 article figure{
 	border: 8px solid #DCDFE8;
 	background-color: #DCDFE8;
+	overflow: hidden;
 }
 
 article figcaption{
@@ -233,5 +234,46 @@ article figcaption{
 	.modalcontent #clsbt{
 		position: absolute;
 		top: 0;
+	}
+}
+
+@media screen and (max-width: 360px), (max-device-width: 360px){
+	article{
+		width: 100%;
+	}
+
+	article figure{
+		width: calc(100% - 10px);
+		margin: 0;
+		margin-top: 10%;
+		border: 5px solid #DCDFE8;
+	}
+
+	article figure figcaption{
+		margin: 0 auto;
+	}
+
+	article span{
+		padding: 0;
+		margin: 0;
+		display: block;
+	}
+
+	figure img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	header h1{
+		font-size: 16vw;
+	}
+
+	article h3{
+		font-size: 13vw;
+	}
+
+	#menubutton{
+		font-size: 14vw;
 	}
 }
