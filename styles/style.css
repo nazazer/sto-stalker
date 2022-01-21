@@ -8,6 +8,7 @@ html {
 body{
 	margin: 0;
 	background-color: #C2C6D0;
+	overflow-x: hidden;
 }
 
 .preloader{
@@ -87,7 +88,7 @@ header a{
 	font-family: 'Rubik', sans-serif;
 }
 
-header #menubutton, #openedmenu{
+header .menubutton, #openedmenu{
 	background-color: #6D7179;
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -169,10 +170,10 @@ footer h4 a{
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 20%;
+	bottom: 0;
 	pointer-events: auto;
 	display: block;
-	background-color: black;
+	background-color: #3F5487;
 	transform: translateY(-100%);
 	transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.4s ease;
 }
@@ -183,7 +184,7 @@ footer h4 a{
 }
 
 #openedmenu{
-	background-color: black;
+	background-color: #3F5487;
 	display: block;
 	opacity: 1;
 }
@@ -215,9 +216,29 @@ footer h4 a{
 	font-size: 1.1em;
 }
 
+.menubutton.msticky{
+	position: fixed;
+	top: 0;
+	margin: 0;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	z-index: 1900;
+	transition: padding 0.3s ease;
+}
+
 .sticky#headlist h2{
 	display: inline-block;
 	transform: translateX(0);
+}
+
+.empty{
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1800;
 }
 
 @keyframes menu_appear{
@@ -262,7 +283,7 @@ footer h4 a{
 	
 	header ul{
 		text-align: center;
-		background-color: black;
+		background-color: #3F5487;
 		padding-left: 0;
 		padding-top: 4%;
 		display: none;
@@ -274,18 +295,18 @@ footer h4 a{
 	}
 
 	header li:hover{
-		background-color: black;
+		background-color: #3F5487;
 	}
 
 	header li{
-		background-color: black;
+		background-color: #3F5487;
 		margin-right: 0;
 	}
 
 	header ul a{
 		text-align: center;
 		color: white;
-		background-color: black;
+		background-color: #3F5487;
 		display: block;
 		padding: 0;
 		width: 100%;

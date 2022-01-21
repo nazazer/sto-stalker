@@ -81,6 +81,7 @@ article h4{
 	font-size: 3em;
 	padding: 4vh;
 	text-shadow: 2px 2px 5px black;
+	font-weight: bold;
 }
 
 .blur_element i{
