@@ -54,8 +54,19 @@ header ul{
 	padding-right: 3vw;
 }
 
+#sticky_text{
+	color: black;
+}
+
 header h2{
-	display: none;
+	display: inline-block;
+	font-family: 'Russo One', sans-serif;
+	padding: 5px;
+	margin: 0;
+	position: absolute;
+	right: 9vw;
+	transform: translateX(200%);
+	transition: transform 1s cubic-bezier(.55,-0.66,.26,1.57);
 }
 
 header li{
@@ -206,11 +217,7 @@ footer h4 a{
 
 .sticky#headlist h2{
 	display: inline-block;
-	font-family: 'Russo One', sans-serif;
-	padding: 5px;
-	margin: 0;
-	position: relative;
-	right: 5px;
+	transform: translateX(0);
 }
 
 @keyframes menu_appear{
