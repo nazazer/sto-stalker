@@ -24,7 +24,8 @@ let header = document.getElementById("headlist");
 let sticky = header.offsetTop;
 
 function checkMenu(){
-  if(window.pageYOffset > sticky){
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  if(window.scrollY >= sticky && +width >= 900){
     header.classList.add("sticky");
   }else{
     header.classList.remove("sticky");
