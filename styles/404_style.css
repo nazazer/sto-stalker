@@ -1,0 +1,46 @@
+article{
+    text-align: center;
+}
+
+article div{
+    margin: 0 auto;
+}
+
+article h2{
+    font-family: 'PT Sans Caption', sans-serif;
+	color: #3F5487;
+	font-size: 3em;
+    padding-right: 3%;
+    display: block;
+}
+
+article h4{
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: black;
+	font-size: 1.1em;
+}
+
+article .txt{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 1.1em;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wrapper footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.wrapper{
+    min-height: 100%;
+}
+
+.txt div{
+    display: block;
+}

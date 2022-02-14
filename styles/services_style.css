@@ -37,6 +37,14 @@ h4{
 	line-height: 1.9em;
 }
 
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: black;
+	font-size: 1.1em;
+	line-height: 1.9em;
+}
+
 
 .block_area{
 	--columns: 25vw auto;
@@ -166,7 +174,7 @@ a:hover .box::before{
 	margin: 0;
 }
 
-.description_area > h4{
+.description_area > p{
 	padding-left: 10vw;
 	padding-right: 10vw;
 }
